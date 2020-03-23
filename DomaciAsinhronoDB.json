@@ -1,0 +1,72 @@
+{
+    "filmovi": [
+        {
+            "id": 1,
+            "naslov": "Player one ready",
+            "godina snimanja": 2018,
+            "glumci": [
+                {
+                    "idGlumac":"1"
+                },
+                {
+                    "idGlumac":"2"
+                }
+           
+            ]
+        },
+        {
+            "id": 2,
+            "naslov": "Doom Returns",
+            "godina snimanja": 2015,
+            "glumci": [
+                {
+                    "idGlumac":"3"
+                }              
+             
+            ]
+        },
+        {
+            "id": 3,
+            "naslov": "The Circle",
+            "godina snimanja": 2011,
+            "glumci": [
+                {
+                    "idGlumac":"1"
+                },
+                {
+                    "idGlumac":"3"
+                },
+                {
+                    "idGlumac":"4"
+                }
+            ]
+        }
+    ],
+    "glumci":[
+        {
+            "id":"1",
+            "ime":"Marko",
+            "prezime":"Milosevic"
+        },
+        {
+            "id":"2",
+            "ime":"Aleksa",
+            "prezime":"Lazarevic"
+        },
+        {
+            "id":"3",
+            "ime":"Milos",
+            "prezime":"Djordjevic"
+        },
+        {
+            "id":"4",
+            "ime":"Uros",
+            "prezime":"Stojanovic"
+        }
+
+
+
+
+
+    ]
+}
