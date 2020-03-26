@@ -2,8 +2,9 @@
     "filmovi": [
         {
             "id": 1,
-            "naslov": "Player one ready",
-            "godina snimanja": 2018,
+            "naslov": "Bloodshot",
+            "zanr":"Thriller",
+            "godina": 2020,
             "glumci": [
                 {
                     "idGlumac":"1"
@@ -16,8 +17,9 @@
         },
         {
             "id": 2,
-            "naslov": "Doom Returns",
-            "godina snimanja": 2015,
+            "naslov": "Guns Akimbo",
+            "zanr":"Action",
+            "godina snimanja": 2001,
             "glumci": [
                 {
                     "idGlumac":"3"
@@ -27,7 +29,8 @@
         },
         {
             "id": 3,
-            "naslov": "The Circle",
+            "naslov": "Only",
+            "zanr":"Comedy",
             "godina snimanja": 2011,
             "glumci": [
                 {
@@ -45,23 +48,23 @@
     "glumci":[
         {
             "id":"1",
-            "ime":"Marko",
-            "prezime":"Milosevic"
+            "ime":"Vin",
+            "prezime":"Diesel"
         },
         {
             "id":"2",
-            "ime":"Aleksa",
-            "prezime":"Lazarevic"
+            "ime":"Toby",
+            "prezime":"Kabbell"
         },
         {
             "id":"3",
-            "ime":"Milos",
-            "prezime":"Djordjevic"
+            "ime":"Daniel",
+            "prezime":"Radcliffe"
         },
         {
             "id":"4",
-            "ime":"Uros",
-            "prezime":"Stojanovic"
+            "ime":"Samara",
+            "prezime":"Weaving"
         }
 
 
