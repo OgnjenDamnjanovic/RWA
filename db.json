@@ -19,7 +19,7 @@
             "id": 2,
             "naslov": "Guns Akimbo",
             "zanr":"Action",
-            "godina snimanja": 2001,
+            "godina": 2001,
             "glumci": [
                 {
                     "idGlumac":"3"
@@ -31,7 +31,7 @@
             "id": 3,
             "naslov": "Only",
             "zanr":"Comedy",
-            "godina snimanja": 2011,
+            "godina": 2011,
             "glumci": [
                 {
                     "idGlumac":"1"
