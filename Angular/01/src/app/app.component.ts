@@ -23,11 +23,11 @@ colorFrame(selectedColor:Color){
   this.frameColor=selectedColor;
 
 }
-getColorName():string{
+/*getColorName():string{
   if(this.frameColor)
   return this.frameColor.colorName
   else
   return ""
-}
+}*/
 }
 
