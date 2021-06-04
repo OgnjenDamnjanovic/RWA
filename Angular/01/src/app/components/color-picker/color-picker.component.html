@@ -1,0 +1,5 @@
+<div>
+  <span *ngFor="let color of colors | async">
+    <button [ngStyle]="{'color': color.colorName}" (click)="colorSelected(color)">{{color.colorName}}</button>
+  </span>
+</div>

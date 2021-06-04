@@ -1,0 +1,5 @@
+<app-color-picker [colors]="availableColorsObs" (selectedColor)="colorFrame($event)"></app-color-picker>
+
+<div *ngIf="frameColor">
+<img src="../assets/image.jpg" alt="" [ngStyle]="{'border-color': getColorName()}">
+</div>

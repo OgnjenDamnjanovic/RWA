@@ -1,0 +1,19 @@
+{
+    "availableColors": [
+        {
+          "colorName":"red"
+        },
+        {
+          "colorName":"green"
+        },
+        {
+          "colorName":"blue"
+        },
+        {
+          "colorName":"yellow"
+        },
+        {
+          "colorName":"cyan"
+        }
+    ]
+}
