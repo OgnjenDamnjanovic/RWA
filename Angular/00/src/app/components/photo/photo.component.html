@@ -1,7 +1,10 @@
-<div *ngIf="image">
+<span *ngIf="image" >
   <img src="../../../assets/{{image.imageUrl}}" alt="" width="200px" height="200px" [ngStyle]="{'filter': imageFilter }">
-</div>
-<button (click)='blurImage()'>blur</button>
-<button (click)="hueImage()">hue</button>
-<button (click)="grayImage()">grayscale</button>
-<button (click)="resetImage()">reset</button>
+  <div>
+    <button (click)='blurImage()'>blur</button>
+    <button (click)="hueImage()">hue</button>
+    <button (click)="grayImage()">grayscale</button>
+    <button (click)="resetImage()">reset</button>
+  </div>
+</span>
+

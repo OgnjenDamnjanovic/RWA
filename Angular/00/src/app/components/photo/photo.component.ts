@@ -18,10 +18,10 @@ export class PhotoComponent implements OnInit {
     this.imageFilter='blur(5px)'
   }
   hueImage(){
-
+    this.imageFilter='hue-rotate(180deg)'
   }
   grayImage(){
-
+    this.imageFilter='grayscale()'
   }
   resetImage(){
     this.imageFilter=""

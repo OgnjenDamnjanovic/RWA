@@ -1,0 +1,12 @@
+span
+{
+  display: flex;
+  flex-direction: column;
+}
+:host{
+  border: 1px solid orange;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 5px;
+  display: block;
+}
