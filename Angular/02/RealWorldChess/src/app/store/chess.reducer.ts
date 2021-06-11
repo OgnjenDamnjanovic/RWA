@@ -28,11 +28,8 @@ export const chessReducer = createReducer(
     ...state,
     selectedFieldCoords: initialState.selectedFieldCoords,
   })), //let fakeRow:Field[]=[{coords:{row:0,column:0},figure:{color:Color.black,type:FigureType.king},color:Color.black,}]
-  on(Actions.moveSelectedFigure, (state, { destinationCoords }) => {
-    let selectedFigure: Figure | null =
-      state.game.board.fields[state.selectedFieldCoords.row][
-        state.selectedFieldCoords.column
-      ].figure;
+  on(Actions.copySelectedFigure, (state, { destinationCoords }) => {
+    let selectedFigure: Figure | null =state.game.board.fields[state.selectedFieldCoords.row][state.selectedFieldCoords.column].figure;
 
     let updatedFields: Field[][] = state.game.board.fields.map(
       (row, rowIndex) => {
@@ -73,7 +70,17 @@ export const chessReducer = createReducer(
         board: { ...state.game.board, fields: updatedFields },
       }
     };
+  }),
+  on(Actions.copyFigureToGraveyard, (state,{figureCoords})=>{
+    const figure:Figure|null=state.game.board.fields[figureCoords.row][figureCoords.column].figure
+    if(!figure) return state
+    return (figure.color.toString()===Color[Color.white])
+    ?{...state,game:{...state.game, whiteGraveyard:state.game.whiteGraveyard.concat([figure])}}
+    :{...state,game:{...state.game, blackGraveyard:state.game.blackGraveyard.concat([figure])}}
+
+
   })
+
 
 );
 

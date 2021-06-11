@@ -18,15 +18,22 @@ export const selectFigure = createAction(
 export const diselectFigure = createAction(
   'Diselect selected figure'
 )
-export const moveSelectedFigure = createAction(
-  'Move Selected Figure',
+export const copySelectedFigure = createAction(
+  'Copy Selected Figure',
   props<{
     destinationCoords:Coordinates
 
   }>()
 )
 export const removeFigure = createAction(
-  'Move Selesacted Figure',
+  'Remove Figure',
+  props<{
+    figureCoords:Coordinates
+
+  }>()
+)
+export const copyFigureToGraveyard = createAction(
+  'Copy Figure To Graveyard',
   props<{
     figureCoords:Coordinates
 

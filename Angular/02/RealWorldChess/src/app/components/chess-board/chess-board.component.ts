@@ -22,13 +22,16 @@ export class ChessBoardComponent implements OnInit {
 
   }
   selectField(fieldCoords:Coordinates){
-    if(this.selectedFieldCoords?.row==-1&&this.selectedFieldCoords.column==-1&&this.chessBoard?.fields[fieldCoords.row][fieldCoords.column].figure)
+    if(!this.chessBoard) return
+    if(this.selectedFieldCoords?.row==-1&&this.selectedFieldCoords.column==-1&&this.chessBoard.fields[fieldCoords.row][fieldCoords.column].figure)
       this.store.dispatch(Actions.selectFigure({figureCoords:fieldCoords}))
     else{
-      this.store.dispatch(Actions.moveSelectedFigure({destinationCoords:fieldCoords}))
-      if(this.selectedFieldCoords)
+      if(this.selectedFieldCoords?.row!=-1&&this.selectedFieldCoords?.column!=-1&&this.selectedFieldCoords){
+      this.store.dispatch(Actions.copyFigureToGraveyard({figureCoords:fieldCoords}))
+      this.store.dispatch(Actions.copySelectedFigure({destinationCoords:fieldCoords}))
       this.store.dispatch(Actions.removeFigure({figureCoords:this.selectedFieldCoords}))
       this.store.dispatch(Actions.diselectFigure());
+    }
     }
 
 
