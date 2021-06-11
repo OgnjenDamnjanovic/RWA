@@ -1,0 +1,9 @@
+<div *ngIf="game">
+ <div>BlackPlayer: {{ blackPlayerName }}</div>
+  <app-chess-graveyard *ngIf="game" [figures]='game.whiteGraveyard' ></app-chess-graveyard>
+
+  <app-chess-board *ngIf="game" [chessBoard]='game.board' [selectedFieldCoords]="selectedFieldCoords|async"></app-chess-board>
+
+  <app-chess-graveyard *ngIf="game" [figures]='game.blackGraveyard'></app-chess-graveyard>
+  <div>WhitePlayer: {{ whitePlayerName }}</div>
+</div>

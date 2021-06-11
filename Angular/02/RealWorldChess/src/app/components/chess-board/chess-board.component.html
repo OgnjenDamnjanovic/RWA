@@ -1,0 +1,9 @@
+<table *ngIf="chessBoard">
+  <tr *ngFor="let row of chessBoard.fields">
+    <td *ngFor="let field of row">
+       <app-chess-field [field]='field' [selected]='(selectedFieldCoords)?.row==field.coords.row&&(selectedFieldCoords)?.column==field.coords.column'
+       (fieldSelected)='selectField($event)' (fieldDiselected)="diselectField()"></app-chess-field>
+
+      </td>
+  </tr>
+</table>

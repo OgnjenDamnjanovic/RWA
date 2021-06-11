@@ -1,0 +1,8 @@
+  <div class="container" *ngIf="field" [ngClass]="{selected: selected}" [ngStyle]="{'background-color':  (field.color.toString()=='white')?'lightyellow':'saddlebrown' }"
+          (click)="fieldLeftClicked()" (contextmenu)="fieldRightClicked($event)" >
+    <app-chess-figure *ngIf="field.figure" [figure]='field.figure'> </app-chess-figure>
+    <div class="emptyField" *ngIf="!field.figure"></div>
+
+  </div>
+
+
